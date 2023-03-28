@@ -9,82 +9,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="img/logo_transparent.png" rel="shortcut icon">
     <title>About JH</title>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <h3>Jordan Herzfeld</h3>
-            <nav>
-                <ul>
-                    <li><a href="home.html"> Home</a></li>
-                    <li><a href="about.html"> About</a></li>
-                    <li><a href="#contact"> Contact</a></li>
-                </ul>
-            </nav>
+            <div class="container">
+                <img class="logo" src="img/logo_transparent.png" alt="Your Name" />
+                <nav>
+                    <ul>
+                        <li><a href="home.html"> Home</a></li>
+                        <li><a href="about.html"> About</a></li>
+                        <li><a href="#contact"> Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
-        <div class="container">
-            <picture>
-                <source srcset="img/profilesmall.png" media="(max-width: 767px)">
-                <img src="img/profilesmall.png" alt="Profile Pic">
-            </picture>
-        </div>
-        <div id="about" >
-            <h2>Hi, my name is Jordan Herzfeld</h2>
-            <p>
-                I am a passionate UI Designer, living around Düsseldorf, who wants to create meaningful experiences. I
-                like to learn and like to listen to feedback
-                in order to create the best possible product.
-            </p>
-        </div>
-        <div>
-            <div>
-                <h3>Relevant Skills</h3>
-                <ul>
-                    <li> UI Design, Ux Research, User Testing, User Flows, Prototyping, User Personas, Creating Brand
-                            Guidelines, Wireframing</li>
-                </ul>
-
+        <div id="profile" class="container">
+            <div class="row">
                 <div>
-                    <h3>My Tools</h3>
-                    <ul>
-                        <li>Figma, Adobe Xd, Visual Studio Code, Adobe Photoshop, Miro</li>
-                    </ul>
+                    <picture>
+                        <source srcset="img/Profile.png" media="(max-width: 767px)">
+                        <img src="img/profile.jpg" alt="Profile Pic">
+                    </picture>
+                    <div id="about">
+                        <h2>Hi, my name is Jordan Herzfeld</h2>
+                        <p>
+                            I am a passionate UI Designer, living around Düsseldorf, who wants to create meaningful
+                            experiences.
+                            I
+                            like to learn and like to listen to feedback
+                            in order to create the best possible product.
+                        </p>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>Relevant Skills</h3>
+                            <ul>
+                                <li> UI Design, Ux Research, User Testing, User Flows, Prototyping, User Personas,
+                                    Creating
+                                    Brand
+                                    Guidelines, Wireframing</li>
+                            </ul>
 
+                            <div>
+                                <h3>My Tools</h3>
+                                <ul>
+                                    <li>Figma, Adobe Xd, Visual Studio Code, Adobe Photoshop, Miro</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="resume">
+                    <h2>Want to learn more about me?</h2>
+                    <a href="files/Resume.pdf" download class="button" target="_blank">My Resume</a>
                 </div>
             </div>
         </div>
+    </div>
     </main>
-    <h2>Want to learn more about me?</h2>
-    <a href="files/Resume.pdf" download class="button" target="_blank">My Resume</a>
 </body>
 
 <footer id="contact">
-    <div class="container"> </div>
-    <h2>Interested in working with me?</h2>
-    <p>
-        Let's have a chat!
-        Contact me through Email <a href="email:jhcreative19atgmail.com">jhcreative19@gmail.com</a>
-    </p>
-    <div>
-        <a href="mailto:jhcreative19@gmail.com" class="button contact" >Send me an Email</a>
+    <div class="container">
+        <h2>Interested in working with me?</h2>
+        <p>
+            Let's have a chat!
+            Contact me through Email <a href="email:jhcreative19atgmail.com">jhcreative19@gmail.com</a>
+        </p>
+        <div>
+            <a href="mailto:jhcreative19@gmail.com" class="button contact">Send me an Email</a>
+        </div>
+        <div>
+            <a href="LINKEDIN-URL" target="_blank">
+                <img src="http://via.placeholder.com/32x32">
+            </a>
+            <a href="BEHANCE-URL" target="_blank">
+                <img src="./icons/behance.svg" alt="Behance" />
+            </a>
+            <a href="INSTAGRAM-LINK">
+                <img src="http://via.placeholder.com/32x32">
+            </a>
+            <p>Copyright Jordan Herzfeld 2023</p>
+        </div>
     </div>
-    <div>
-        <a href="LINKEDIN-URL" target="_blank">
-            <img src="http://via.placeholder.com/32x32">
-        </a>
-        <a href="BEHANCE-URL" target="_blank">
-            <img src="./icons/behance.svg" alt="Behance" />
-        </a>
-        <a href="INSTAGRAM-LINK">
-            <img src="http://via.placeholder.com/32x32">
-        </a>
-        <p>Copyright Jordan Herzfeld 2023</p>
-    </div>
-
 </footer>
 
 </html>

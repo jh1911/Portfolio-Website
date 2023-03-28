@@ -7,16 +7,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="normalize" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="img/logo_transparent.png" rel="shortcut icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JH-Portfolio</title>
+    <title>Jordan Herzfeld</title>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <img class="logo" src="https://via.placeholder.com/200x70?text=Logo" alt="Your Name" />
+            <img class="logo" src="img/logo_transparent.png" alt="Your Name" />
             <nav>
                 <ul>
                     <li><a href="about.html"> About</a></li>
@@ -27,63 +28,64 @@
     </header>
     <main>
         <!-- For the Hero section -->
-        <div id="hero">
-            <div class="container">
-                <h1>Hi, my name is Jordan Herzfeld</h1>
-                <p class="Introduction"> I am a passionate UI Designer who wants to create meaningful experiences. I am
-                    based around
-                    Düsseldorf, Germany.</p>
-            </div>
+        <div id="hero" class="container">
+            <h1>Hi, my name is Jordan Herzfeld - Welcome!</h1>
+            <p class="Introduction">
+                I am a junior UI Designer with a passion for designing meaningful products.
+            </p>
         </div>
-
         <!--Work-->
-        <div id="Work">
-            <div>
-                <h2>My Work</h2>
-                <div>
-                    <div>
-                        <picture>
-                            <source srcset="img/MoneyWise/MoneyWise small.png" media="(max-width:767px)">
-                            <img src="img/MoneyWise/MoneyWise small.png" alt="My Image">
-                        </picture>
-                    </div>
+        <div id="work" class="container">
+            <h2>My Work</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <picture>
+                        <source srcset="img/MoneyWise/MoneyWise small.png" media="(max-width:767px)">
+                        <img src="img/MoneyWise/MoneyWise small.png" alt="My Image">
+                    </picture>
                 </div>
-                <div class="row">
+                <div class="col-md-6">
                     <h3>MoneyWise</h3>
-                    <p>MoneyWise is a mobile saving app which helps its users to reach their financial goals and save
+                    <p>
+                        MoneyWise is a mobile saving app which helps its users to reach their financial goals and save
                         moeny
                         for what they value the most</p>
                     <a href="MoneyWise.html" class="button project">View Project</a>
                 </div>
             </div>
-        </div>
-        <div>
-            <div>
-                <picture>
-                    <source srcset="img/ByteShield/ByteShield small.png" media="(max-width:767px)">
-                    <img src="img/ByteShield/ByteShield small.png" alt="My Image">
-                </picture>
+            <div class="row">
+                <div class="col-md-6">
+                    <picture>
+                        <source srcset="img/ByteShield/ByteShield small.png" media="(max-width:767px)">
+                        <img src="img/ByteShield/ByteShield small.png" alt="My Image">
+                    </picture>
+                </div>
+                <div class="col-md-6">
+                    <h3>ByteShield</h3>
+                    <p>
+                        ByteShield is a native mobile app created for iOS and Android which aims to provide the user
+                        with all the neccessary tools to protect his data when browsing the web
+                    </p>
+                    <a href="" class="button project">View Project</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <picture>
+                        <source srcset="img/Chef's Place/Cehf's Place small.png" media="(max-width:767px)">
+                        <img src="img/Chef's Place/Chef'sPlace small.png" alt="My Image">
+                    </picture>
+                </div>
+                <div class="col-md-6">
+                    <h3>Chef's Place</h3>
+                    <p>
+                        Chef's Place is a responsive recipe web app with a mobile first approach which was created to
+                        eliminate pain points users encountered when interacting with other recipe apps
+                    </p>
+                    <a href="" class="button project">View Project</a>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <h3>ByteShield</h3>
-            <p>ByteShield is a native mobile app created for iOS and Android which aims to provide the user with all the
-                neccessary tools to protect his data when browsing the web</p>
-            <a href="" class="button project">View Project</a>
-        </div>
-        <div class="row">
-            <div>
-                <picture>
-                    <source srcset="img/Chef's Place/Cehf's Place small.png" media="(max-width:767px)">
-                    <img src="img/Chef's Place/Chef'sPlace small.png" alt="My Image">
-                </picture>
-            </div>
-        </div>
-        <h3>Chef's Place</h3>
-        <p>Chef's Place is a responsive recipe web app with a mobile first approach which was created to eliminate pain
-            points users encountered when interacting with other recipe apps
-        </p>
-        <a href="" class="button project">View Project</a>
     </main>
 </body>
 <footer id="contact">
