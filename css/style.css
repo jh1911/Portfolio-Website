@@ -104,6 +104,16 @@ a:active { /* selected link */
     background-color: #0D0D87;
     color: #ffffff;
 }
+
+.plain-list {
+    list-style: none;
+}
+.center-aligned-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .container {
     padding: 0 15px;
 }
@@ -118,7 +128,12 @@ header .container {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
     clear: both;
 }
-#work .row { 
+.aboutpage .row {
+    max-width: 1000px;
+    margin: 45px auto;
+}
+
+.work .row { 
     padding-bottom: 25px; 
     border-bottom: 1px solid #4a4a4a; 
 }
@@ -159,16 +174,26 @@ nav > ul > li > a {
 .Introduction {
     text-align: center;
 }
-#work h2 {
+
+.work {
     text-align: center;
+    max-width: 1500px;
+    margin: 10px auto;
+}
+
+.project-page .work {
+    text-align: center;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+.work h2 {
     padding-bottom: 100px;
     text-transform: uppercase;
 }
-#work img {
-    text-align: center;
-    max-width: 600px;
-    max-height: 600px;
-
+.work img {
+    max-width: 700px;
+    max-height: 700px;
 }
 
 [class*="col-"] {
@@ -193,8 +218,8 @@ nav > ul > li > a {
 }
 
 #contact img {
-    max-width: 20px;
-    max-height: 20px;
+    max-width: 30px;
+    max-height: 30px;
 }
 
 #profile img {
@@ -216,6 +241,7 @@ footer {
 
 .wireframe img{
     max-width: 320px;
+    max-height: 900px;
 }
 
 #animation {
@@ -228,10 +254,31 @@ height: auto;
     to {fill: #f76414;}
   }
 
-  .sun {
+.sun {
     animation: 4s color-change infinite alternate linear;
-  }
+}
 
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.berlin-illustration {
+    min-width: 300px;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
