@@ -220,6 +220,8 @@ nav > ul > li > a {
 #contact img {
     max-width: 30px;
     max-height: 30px;
+    margin-right: 2.5px;
+    margin-top: 10px;
 }
 
 #profile img {
