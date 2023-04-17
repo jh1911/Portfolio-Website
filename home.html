@@ -17,13 +17,17 @@
 <body>
     <header>
         <div class="container">
-            <img class="logo" src="img/logo_transparent.png" alt="Your Name" />
-            <nav>
-                <ul>
-                    <li><a href="about.html"> About</a></li>
-                    <li><a href="#contact"> Contact</a></li>
-                </ul>
-            </nav>
+            <div class="navtoggle" id="myNavtoggle">
+                <img class="logo" src="img/logo_transparent.png" alt="Your Name" />
+                <nav>
+                    <ul>
+                        <li><a href="about.html"> About</a></li>
+                        <li><a href="#contact"> Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                    class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -50,7 +54,8 @@
                         MoneyWise is a mobile saving app which helps its users to reach their financial goals and save
                         moeny
                         for what they value the most</p>
-                    <a href="https://www.behance.net/gallery/165669197/Design-Branding-MoneyWise-Personal-Finance" target="_blank" class="button project">View Project</a>
+                    <a href="https://www.behance.net/gallery/165669197/Design-Branding-MoneyWise-Personal-Finance"
+                        target="_blank" class="button project">View Project</a>
                 </div>
             </div>
             <div class="row">
@@ -66,7 +71,8 @@
                         ByteShield is a native mobile app created for iOS and Android which aims to provide the user
                         with all the neccessary tools to protect his data when browsing the web
                     </p>
-                    <a href="https://www.behance.net/gallery/165669531/ByteShield-mobile-VPN-App-for-iOS-Android" target="_blank" class="button project">View Project</a>
+                    <a href="https://www.behance.net/gallery/165669531/ByteShield-mobile-VPN-App-for-iOS-Android"
+                        target="_blank" class="button project">View Project</a>
                 </div>
             </div>
             <div class="row">
@@ -82,7 +88,8 @@
                         Chef's Place is a responsive recipe web app with a mobile first approach which was created to
                         eliminate pain points users encountered when interacting with other recipe apps
                     </p>
-                    <a href="https://www.behance.net/gallery/165669331/Chefs-Place-Responsive-Recipe-Web-App" target="_blank" class="button project">View Project</a>
+                    <a href="https://www.behance.net/gallery/165669331/Chefs-Place-Responsive-Recipe-Web-App"
+                        target="_blank" class="button project">View Project</a>
                 </div>
             </div>
             <div class="row">
@@ -1552,9 +1559,9 @@
         <h2>Interested in working with me?</h2>
         <p>
             Let's have a chat!</p>
-       <!--<p>
+        <!--<p>
             Contact me through my email: <a href="email:jhcreative19gmail.com">jhcreative19@gmail.com</a>
-        </p>--> 
+        </p>-->
         <div>
             <a href="mailto:jhcreative19@gmail.com" class="button contact">Email me</a>
         </div>
@@ -1563,7 +1570,7 @@
             <!--Social Media Layout and Placeholders-->
             <a href="https://www.linkedin.com/in/jordan-herzfeld-944b88257/" target="_blank">
                 <img src="./icons/linkedinicon.svg">
-                
+
             </a>
             <a href="https://www.behance.net/jordanherzfeld" target="_blank">
                 <img src="./icons/behance.svg" alt="Behance" />
@@ -1575,7 +1582,9 @@
         </div>
 
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
