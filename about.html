@@ -1,109 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="img/logo_transparent.png" rel="shortcut icon">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="img/logo_transparent.png" rel="shortcut icon" />
     <title>About JH</title>
-</head>
+  </head>
 
-<body class="aboutpage">
+  <body class="aboutpage">
     <header>
-        <div class="container">
-            <img class="logo" src="img/logo_transparent.png" alt="Your Name" />
-            <nav>
-                <ul>
-                    <li><a href="home.html"> Home</a></li>
-                    <li><a href="#contact"> Contact</a></li>
-                    <li><a href="#contact"> Contact</a></li>
-                </ul>
-            </nav>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <img class="logo" src="img/logo_transparent.png" alt="Your Name" />
+          <nav>
+            <ul>
+              <li><a href="home.html"> Home</a></li>
+              <li><a href="#contact"> Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
     <main id="profile" class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <picture>
-                    <source srcset="img/Profile.png" media="(max-width: 767px)">
-                    <img src="img/profile.jpg" alt="Profile Pic">
-                </picture>
-            </div>
-            <div class="col-md-6">
-                <h2>Hi, my name is Jordan Herzfeld</h2>
-                <p>
-                    I am a 21-year-old UI | UX Designer, based around Düsseldorf, Germany. I know how to ideate, concept
-                    and bring products to life. Finding solutions to create the best possible product is always my
-                    priority.
-                </p>
-            </div>
+      <div class="row">
+        <div class="col-md-6">
+          <picture>
+            <source srcset="img/Profile.png" media="(max-width: 767px)" />
+            <img src="img/profile.jpg" alt="Profile Pic" />
+          </picture>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <h3>My Relevant Skills</h3>
-                <ul>
-                    <li>UI Design</li>
-                    <li>UX Research</li>
-                    <li>User Testing</li>
-                    <li>User Flows</li>
-                    <li>Prototyping</li>
-                    <li>Creating User Personas</li>
-                    <li>Creating Brand Guidelines</li>
-                    <li>Wireframing</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <h3>My Favorite Tools</h3>
-                <ul>
-                    <li>Figma</li>
-                    <li>Adobe Xd</li>
-                    <li>Visual Studio Code</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Miro</li>
-                </ul>
-            </div>
+        <div class="col-md-6">
+          <h2>Hi, my name is Jordan Herzfeld</h2>
+          <p>
+            I am a 21-year-old UI | UX Designer, based around Düsseldorf,
+            Germany. I know how to ideate, concept and bring products to life.
+            Finding solutions to create the best possible product is always my
+            priority.
+          </p>
         </div>
-        <div class="row" id="resume">
-            <h2>Want to learn more about me?</h2>
-            <a href="files/Resume.pdf" download class="button" target="_blank">My Resume</a>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>My Relevant Skills</h3>
+          <ul>
+            <li>UI Design</li>
+            <li>UX Research</li>
+            <li>User Testing</li>
+            <li>User Flows</li>
+            <li>Prototyping</li>
+            <li>Creating User Personas</li>
+            <li>Creating Brand Guidelines</li>
+            <li>Wireframing</li>
+          </ul>
         </div>
+        <div class="col-md-6">
+          <h3>My Favorite Tools</h3>
+          <ul>
+            <li>Figma</li>
+            <li>Adobe Xd</li>
+            <li>Visual Studio Code</li>
+            <li>Adobe Photoshop</li>
+            <li>Miro</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row" id="resume">
+        <h2>Want to learn more about me?</h2>
+        <a href="files/CV_EN.pdf" download class="button" target="_blank"
+          >My Resume</a
+        >
+      </div>
     </main>
 
     <footer id="contact">
-        <div class="container"></div>
-        <h2>Interested in working with me?</h2>
-        <p>
-            Let's have a chat!</p>
-        <p>
-            Contact me through my email: <a href="email:jhcreative19gmail.com">jhcreative19@gmail.com</a>
-        </p>
-        <div>
-            <a href="mailto:jhcreative19@gmail.com" class="button contact">Email me</a>
-        </div>
-        <p></p>
-        <div>
-            <!--Social Media Layout and Placeholders-->
-            <a href="https://www.linkedin.com/in/jordan-herzfeld-944b88257/" target="_blank">
-                <img src="./icons/linkedinicon.svg">
-            </a>
-            <a href="https://www.behance.net/jordanherzfeld" target="_blank">
-                <img src="./icons/behance.svg" alt="Behance" />
-            </a>
-            <a href="https://www.instagram.com/jordanh3rzfeld/">
-                <img src="./icons/instagram.svg">
-            </a>
-            <p>Copyright Jordan Herzfeld 2023</p>
-        </div>
-
+      <div class="container"></div>
+      <h2>Interested in working with me?</h2>
+      <p>Let's have a chat!</p>
+      <p>
+        Contact me through my email:
+        <a href="email:jhcreative19gmail.com">jhcreative19@gmail.com</a>
+      </p>
+      <div>
+        <a href="mailto:jhcreative19@gmail.com" class="button contact"
+          >Email me</a
+        >
+      </div>
+      <p></p>
+      <div>
+        <!--Social Media Layout and Placeholders-->
+        <a
+          href="https://www.linkedin.com/in/jordan-herzfeld-944b88257/"
+          target="_blank"
+        >
+          <img src="./icons/linkedinicon.svg" alt="linkedin" />
+        </a>
+        <a href="https://www.behance.net/jordanherzfeld" target="_blank">
+          <img src="./icons/behance.svg" alt="Behance" />
+        </a>
+        <a href="https://www.instagram.com/jordanh3rzfeld/">
+          <img src="./icons/instagram.svg" alt="Instagram" />
+        </a>
+        <p>Copyright Jordan Herzfeld 2023</p>
+      </div>
     </footer>
 
     <script src="js/scripts.js"></script>
-
-</body>
-
+  </body>
 </html>
